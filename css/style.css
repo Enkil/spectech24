@@ -1,0 +1,121 @@
+/* Layout */
+
+.container
+{
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+
+.row
+{
+    overflow: hidden;
+}
+
+.to-right
+{
+    float: right;
+}
+
+.to-left
+{
+    float: left;
+}
+
+
+
+
+
+
+/* Typography */
+
+
+
+
+
+
+
+
+
+
+/* Header */
+
+header
+{
+    padding: 10px 0;
+
+    background-color: #fc3;
+}
+
+a.logo
+{
+    font-size: 24px;
+
+    display: inline-block;
+    float: left;
+
+    vertical-align: middle;
+    text-decoration: none;
+
+    color: #000;
+}
+
+nav
+{
+    float: right;
+}
+
+nav ul li
+{
+    display: inline-block;
+}
+
+/* Subheader */
+
+.subheader
+{
+    padding: 23px;
+
+    background-image: url(http://placehold.it/1024x100);
+}
+
+.subheader h1
+{
+    margin: 0;
+}
+
+/* Main */
+
+main
+{
+    overflow: hidden;
+
+    background-color: #888;
+}
+
+section
+{
+    padding: 40px;
+
+    background-color: #fff;
+}
+
+section
+
+/* Main > persons */
+
+
+/* Buttons */
+
+a.button
+{
+    font-weight: bold;
+
+    padding: 12px 20px;
+
+    text-decoration: none;
+
+    color: #000;
+    background-color: #fc3;
+}
