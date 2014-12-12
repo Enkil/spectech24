@@ -1,9 +1,4 @@
-// Team Page
-
-.lead{
-	font-size: 22px;
-	margin: 30px 0;
-}
+// TEAM PAGE
 
 .persons{
 	background-color: #fff;
@@ -32,39 +27,91 @@
 		border-radius: 50%;
 		height: 140px; 
 		width: 140px;
-		margin: ;
 	}
 }
 
-.abovefooter{
-	background-color: #202E3B;
-	font-size: 24px;
-	color: #FFCD34;
+// TECHNICS PAGE
 
-	.form-block{
-		padding: 40px 0;
-		overflow: hidden;
+.row-tech{
+	overflow: hidden;
+	margin: 30px 0 30px 0;
+}
+
+.tech-item{
+	display: inline-block;
+	width: 300px;
+	background-color: #fff;
+	padding: 35px 30px 38px 30px;
+	float: left;
+
+	&:nth-child(2){
+		margin: 0 15px 0 15px;
 	}
 
-	.button{
-		font-weight: normal;
-		width: 220px;
-		height: 50px;
-		line-height: 40px;
+	h2{
+		font-size: 21px;
+		font-weight: bold;
 	}
 
-	p{padding-bottom: 30px;}
+	img{margin: 11px 0 15px 0; width: 255px; height: 165px;}
 
-	input{
-		background-color: #202e3b;
-		padding: 10px;
-		color: #fff;
-		font-size: 18px;
-		outline: none;
-		height: 50px;
+	p{
+		font-size: 27px;
+		font-weight: bold;
+		margin: 5px 0 30px 0;
+
+		span{font-size: 18px;}
+	}
+
+	.btn{vertical-align: middle;
+
+		&-left{
+			background-color: #f3c331;
+			font-size: 17px;
+			padding: 8px 0px 8px 0px;
+			color: #fff;
+			width: 50%;
+			text-align: center;
+			display: inline-block;
+			float: left;
+			text-decoration: none;
+		}
+
+		&-right{
+			background-color: #354b60;
+			font-size: 17px;
+			padding: 8px 0px 8px 0px;
+			color: #fff;
+			width: 50%;
+			text-align: center;	
+			display: inline-block;
+			float: right;
+			text-decoration: none;
+		}
+	}
+
+}
+
+.nav-left{
+	border: 2px dashed;
+	background-color: #EEEEEE;
+	padding: 29px 20px 29px 33px;
+
+	h2{font-size: 30px;line-height: 44px;}
+
+	li{
 		display: inline-block;
-		width: 220px;
-		margin-right: 20px;
-		float: left;		
+		margin-bottom: 10px;
 	}
+
+	a{
+		color: #354b60;
+		font-size: 18px;
+		line-height: 44px;
+
+		&.active{font-weight: bold;}
+	}
+
 }
+
+
