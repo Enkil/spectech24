@@ -1,0 +1,63 @@
+.page-header{
+	background-color: #ffcd34;
+	line-height: 80px;
+
+	// header logo group
+	&__logo{
+		display: inline-block;
+		float: left;
+		font-size: 24px;
+		color: #000;
+		text-decoration: none;
+
+		// logo image (img)
+		&-img{
+			vertical-align: middle;
+		}
+		
+		// logo text (span)
+		&-text{
+			vertical-align: middle;
+		}
+	}
+	
+	// header navigation group
+	&__nav{
+		float: right;
+		font-size: 17px;
+		width: 100%;
+
+		// list of navigation elements (ul)
+		&-links{
+			text-align: right;
+		}
+		
+		// navigation element (li)
+		&-link{
+			display: inline-block;
+			text-align: center;
+			padding: 0 15px;
+			
+			&:hover{
+				background-color: #FFE184;
+				line-height: 45px;
+			}
+			
+			// navigation link (a)
+			&-item{
+				text-decoration: none;
+				color: #000;
+			}
+			
+			// navigation call-to-action item
+			&--cta{
+				background-color: #FFE184;
+				line-height: 45px;
+
+				&:hover{
+					background-color: #f8f7f7;
+				}
+			}
+		}
+	}
+}

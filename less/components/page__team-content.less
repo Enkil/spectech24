@@ -1,0 +1,131 @@
+// Persons block
+.persons{
+	background-color: #fff;
+	padding-bottom: 20px;
+	margin-bottom: 25px;
+
+	&__title{
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 24px;
+		padding: 20px;
+	}
+
+	&__list{
+	}
+
+	&__item{
+		display: inline-block;
+		text-align: center;
+
+		&-title{
+			font-size: 24px;
+			line-height: 24px;
+			font-weight: normal;
+			text-align: center;
+			padding: 10px 0 20px 0;
+		}
+
+		&-about{
+			font-size: 18px;
+			line-height: 24px;
+			text-align: left;
+			padding-left: 35px;
+		}
+	}
+
+	&__face{
+		border-radius: 50%;
+		height: 120px; 
+		width: 120px;
+	}
+}
+
+// Form block
+.resume{
+	background-color: #202e3b;
+	padding: 30px 0 40px 0;
+
+	&__lead{
+		color: #ffcc33;
+		font-size: 24px;
+		margin-bottom: 40px;
+	}
+
+	&__form-input{
+		position: relative;
+		display: inline-block;
+		border: 1px solid #ffcc33;
+		height: 45px;
+		outline: none;
+		background-color: #202e3b;
+		color: #fff;
+		text-align: left;
+		padding-left: 20px;
+		font-size: 18px;
+		line-height: 45px;
+		width: 100%;
+			
+		text-overflow: ellipsis;
+
+		&::placeholder 				{color:#fff;}
+		&::-moz-placeholder         {color:#fff;}/* Firefox 19+ */
+		&:-moz-placeholder          {color:#fff;}/* Firefox 18- */
+		:-ms-input-placeholder      {color:#fff;}
+		
+		&:focus::placeholder {color: transparent;}
+
+		// change default text on input button with type "file"
+		&--file{
+			display: none;
+		}
+
+		&--bgimg-down{
+			background: url('../../img/icon__form-arrow--down.png') no-repeat 95%;
+		}
+
+		&--bgimg-up{
+			background: url('../../img/icon__form-arrow--up.png') no-repeat 95%;
+		}		
+
+		&--wo-arrows{
+			appearance: none;
+			-webkit-appearance:button;
+			-moz-appearance:button;
+			border-radius: 0;
+			cursor: pointer;
+		}
+	}
+
+	.button{
+		height: 45px;
+		width: 100%;
+		cursor: pointer;
+	}
+}
+
+// Feauters block
+.features{
+	font-size: 13px;
+	line-height: 14px;
+	overflow: hidden;
+	margin: 40px 0 40px 0;
+
+	&__item{
+		display: flex;
+		flex-wrap: wrap;
+
+		&--img{
+			display: inline-block;
+			float: left;
+			margin: auto;
+		}
+
+		&--text{
+			display: inline-block;
+			float: left;
+			padding: 0 20px 0 20px;
+			width: 75%;
+		}
+	}
+}

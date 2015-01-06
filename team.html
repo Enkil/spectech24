@@ -1,162 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Спецтех24</title>
-		<!-- <link rel='stylesheet' href='css/normalize.css' type='text/css'> -->
-		<link rel="stylesheet" href="css/style.css" type="text/css">
-	</head>
-	<body>
+<head>
+	<meta charset="UTF-8">
+	<title>Team | SpecTech24</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<!-- HEADER -->
+	<header class="page-header">
 
-    	<!-- HEADER -->
-    	<header>
-    		<div class="container">
+		<div class="container">
+			<div class="row">
 
-    			<div class="row">
 
-    				<a href="index.html" class="logo">
-    					<img src="img/logo1.png" height="36" width="47" alt="Спецтех24"></img>
-    					<span><strong>Спецтех</strong>24</span>
-    				</a>
-    				
-    				<nav>
-    					<ul>
-    						<li><a href="team.html">О компании</a></li>
-    						<li><a href="tech.html">Техника</a></li>
-    						<li><a href="portfolio.html">Портфолио</a></li>
-    						<li><a href="contacts.html">Контакты</a></li>
-    						<li><a href="">Заказать звонок</a></li>
-    					</ul>
-    				</nav>
-    				
+				<div class="col-4"> <!-- Logo Group-->
+					
+					<a href="index.html" class="page-header__logo">
+						<img src="img/icon__logo--header.png" alt="Главная | Спецтех24" class="page-header__logo-img">
+						<span class="page-header__logo-text"><strong>Спецтех</strong>24</span>
+					</a>
+
 				</div>
 
-    		</div>	
 
-			<!-- Gradient lines -->
-    		<div class="stripes"></div>
-    		<!-- / Gradient lines -->
+				<div class="col-8"> <!-- Main Nav Group-->
+					
+					<nav class="page-header__nav">
+						<ul class="page-header__nav-links">
+							<a href="team.html" class="page-header__nav-link-item"><li class="page-header__nav-link">О компании</li></a>
+							<a href="catalog.html" class="page-header__nav-link-item"><li class="page-header__nav-link">Техника</li></a>
+							<a href="portfolio.html" class="page-header__nav-link-item"><li class="page-header__nav-link">Портфолио</li></a>
+							<a href="contacts.html" class="page-header__nav-link-item"><li class="page-header__nav-link">Контакты</li></a>
+							<a href="contacts.html#contact-form" class="page-header__nav-link-item"><li class="page-header__nav-link page-header__nav-link--cta">Заказать звонок</li></a>
+						</ul>
+					</nav>
 
-    	</header>
-    	<!-- /HEADER -->
-
-    	<!-- SUB HEADER -->
-		<div class="subheader">
-			<div class="container">
-				<div class="row">
-					<a href=""><h1>Команда</h1></a>
-					<a href="" class="button">Мне нужна консультация</a>
 				</div>
+
+
 			</div>
 		</div>
-		<!-- / SUB HEADER -->
 
-		<!-- CONTENT -->
-		<main>
+	</header>
+	<!-- / HEADER -->
 
-			<div class="container">
 
-				<p class="lead">Спецтех это безотказная техника, принципиально новый уровень сервиса и качества. Если вы искали идеальных партнеров на объект - Вы нашли их. <br />
-				Что понадобится Вам сегодня?</p>
+	<!-- SUB HEADER -->
+	<div class="subheader">
+		<div class="container">
+			<div class="row">
 
-				<section class="persons">
-					<h2><span>Руководство и офиc</span></h2>
+				<div class="col-6"> <!-- Left subheader link, page title-->
+					<a href="#" class="subheader__link"><h1 class="subheader__title">Команда</h1></a>
+				</div>
 
-					<ul class="faces">
-						<li><img src="img/team1.png" alt=""></li>
-						<li><img src="img/team2.png" alt=""></li>
-						<li><img src="img/team3.png" alt=""></li>
-						<li><img src="img/team4.png" alt=""></li>
-						<li><img src="img/team5.png" alt=""></li>
-					</ul>
-				</section>
-
-				<section class="persons">
-					<h2><span>Водитель операторы</span></h2>
-
-					<ul class="faces">
-						<li><img src="img/team1.png" alt=""></li>
-						<li><img src="img/team2.png" alt=""></li>
-						<li><img src="img/team3.png" alt=""></li>
-						<li><img src="img/team4.png" alt=""></li>
-						<li><img src="img/team5.png" alt=""></li>
-					</ul>
-				</section>
-
-				<section class="persons">
-					<h2><span>Инженерно-технический персонал</span></h2>
-
-					<ul class="faces">
-						<li><img src="img/team1.png" alt=""></li>
-						<li><img src="img/team2.png" alt=""></li>
-						<li><img src="img/team3.png" alt=""></li>
-						<li><img src="img/team4.png" alt=""></li>
-						<li><img src="img/team5.png" alt=""></li>
-					</ul>
-				</section>
+				<div class="col-6"> <!-- Right subheader link, cta-button -->
+					<a href="contacts.html#contact-form" class="button">Мне нужна консультация</a>
+				</div>
 
 			</div>
 
-		</main>
-		<!-- / CONTENT -->
+		</div>
+	</div>
 
 
-		<!-- ABOVEFOOTER -->
-		<div class="abovefooter">
-			<div class="stripes"></div> <!-- Gradient lines -->
-			
-			<div class="container">	
+	<!-- PAGE CONTENT -->
+	<main class="page-content">
 
-				<!-- Form -->
-				<div class="form-block">
-					<p>Закажите бесплатную консультацию по подбору подходящей техники</p>
 
-					<div>
-						<form action="send">
-							<input type="text" placeholder="Как вас зовут?">
-							<input type="text" placeholder="Номер для связи">
-							<input type="text" placeholder="Выберите задачу">
+		<!-- Lead text -->
+		<div class="container"> 
+			<div class="row">
+
+				<div class="col-12">
+
+					<p class="lead">Спецтех это безотказная техника, принципиально новый уровень сервиса и качества.<br />
+					Если вы искали идеальных партнеров на объект - Вы нашли их.<br />
+					Что понадобится Вам сегодня?</p>
+
+				</div>
+			</div>
+		</div> 
+		<!-- / Lead text -->
+
+
+		<!-- Persons block -->
+		<div class="container"> 
+			<div class="row">
+
+				<div class="col-12"> 
+
+					<section class="persons">
+						<h2 class="persons__title"><span>Руководство и офис</span></h2>
+
+						<div class="row">
+							<ul class="persons__list">
+								<li class="persons__item col-3"><img class="persons__face" src="img/team1.png" alt=""><h3 class="persons__item-title">Георгий <br />Голонский</h3><p class="persons__item-about">Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов 
+	</p></li>
+								<li class="persons__item col-3"><img class="persons__face" src="img/team2.png" alt=""><h3 class="persons__item-title">Роман <br />Горбачев</h3><p class="persons__item-about">Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов 
+	</p></li>
+								<li class="persons__item col-3"><img class="persons__face" src="img/team5.png" alt=""><h3 class="persons__item-title">Какой-то <br />Чувак</h3><p class="persons__item-about">Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов 
+	</p></li>
+								<li class="persons__item col-3"><img class="persons__face" src="img/team4.png" alt=""><h3 class="persons__item-title">Алексей <br />Приловский</h3><p class="persons__item-about">Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов 
+	</p></li>
+							</ul>	
+						</div>	
+
+					</section>
+
+				</div>
+				
+			</div>
+		</div> 
+		<!-- / Persons block -->
+
+
+		<!-- Persons block -->
+		<div class="container">
+			<div class="row">
+
+				<div class="col-12"> 
+
+					<section class="persons">
+						<h2 class="persons__title"><span>Водители и операторы</span></h2>
+
+						<div class="row">
+							<ul class="persons__list">
+								<li class="persons__item col-3"><img class="persons__face" src="img/team1.png" alt=""><h3 class="persons__item-title">Георгий <br />Голонский</h3><p class="persons__item-about">Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов 
+	</p></li>
+								<li class="persons__item col-3"><img class="persons__face" src="img/team2.png" alt=""><h3 class="persons__item-title">Георгий <br />Голонский</h3><p class="persons__item-about">Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов 
+	</p></li>
+								<li class="persons__item col-3"><img class="persons__face" src="img/team3.png" alt=""><h3 class="persons__item-title">Георгий <br />Голонский</h3><p class="persons__item-about">Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов 
+	</p></li>
+								<li class="persons__item col-3"><img class="persons__face" src="img/team4.png" alt=""><h3 class="persons__item-title">Георгий <br />Голонский</h3><p class="persons__item-about">Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов 
+	</p></li>
+							</ul>	
+						</div>	
+
+					</section>
+
+				</div>
+				
+			</div>
+		</div> 
+		<!-- / Persons block -->
+
+
+		<!-- Persons block -->
+		<div class="container"> 
+			<div class="row">
+
+				<div class="col-12"> 
+
+					<section class="persons">
+						<h2 class="persons__title"><span>Инженерно-технический персонал</span></h2>
+
+						<div class="row">
+							<ul class="persons__list">
+								<li class="persons__item col-3"><img class="persons__face" src="img/team1.png" alt=""><h3 class="persons__item-title">Георгий <br />Голонский</h3><p class="persons__item-about">Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов 
+	</p></li>
+								<li class="persons__item col-3"><img class="persons__face" src="img/team2.png" alt=""><h3 class="persons__item-title">Георгий <br />Голонский</h3><p class="persons__item-about">Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов 
+	</p></li>
+								<li class="persons__item col-3"><img class="persons__face" src="img/team3.png" alt=""><h3 class="persons__item-title">Георгий <br />Голонский</h3><p class="persons__item-about">Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов 
+	</p></li>
+								<li class="persons__item col-3"><img class="persons__face" src="img/team4.png" alt=""><h3 class="persons__item-title">Георгий <br />Голонский</h3><p class="persons__item-about">Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов 
+	</p></li>
+							</ul>	
+						</div>	
+
+					</section>
+
+				</div>
+				
+			</div>
+		</div>
+		<!-- / Persons block -->
+
+		<!-- Resume form block -->
+		<div class="resume"> 
+			<div class="container">
+
+
+				<div class="row">
+					<div class="col-12">
+						<p class="resume__lead">Хотите работать с нами? Отправьте резюме прямо сейчас!</p>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-12">
+
+
+						<form action="#" class="resume__form">
+						<div class="row">
+
+							<div class="col-3">
+								<input type="text" pattern="[A-Za-zА-Яа-яЁё]" required="required" maxlength="100" placeholder="Как вас зовут?" class="resume__form-input">
+							</div>
+
+
+							<div class="col-3">
+								<input type="text" pattern="[A-Za-zА-Яа-яЁё]" required="required" maxlength="100" placeholder="Должность" class="resume__form-input resume__form-input--bgimg-down">
+							</div>
+
+							
+							<div class="col-3">
+								<label class="resume__form-input resume__form-input--bgimg-up">
+									<input type="file" name="file" id="file" required="required" enctype="multipart/form-data" accept="application/msword, application/pdf, text/plain, application/excel" class="resume__form-input resume__form-input--file">
+									<span>Загрузите резюме</span>
+								</label>
+							</div>
+
+							
+							<div class="col-3">
+								<input type="submit" value="Отправить заявку" class="button">
+							</div>
+
+						</div>
 						</form>
+
+
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+		<!-- / Resume form block -->
+
+		<!-- Features block -->
+		<div class="container"> 
+			<div class="row">
+
+				<div class="features">
+
+
+					<div class="features__item col-3">
+						<img src="img/icon__features--man1.png" alt="" class="features__item features__item--img">
+						<span class="features__item--text">Техника проходит обязательное обслуживание перед каждым выездом </span>
 					</div>
 					
-					<a href="" class="button">Заказать консультацию</a>
+					<div class="features__item col-3">
+						<img src="img/icon__features--tools.png" alt="" class="features__item features__item--img">
+						<span class="features__item--text">Все машины оборудованы спец. сигналами, для предупреждения аварий
+</span>
+					</div>
+					
+					<div class="features__item col-3">
+						<img src="img/icon__features--wall.png" alt="" class="features__item features__item--img">
+						<span class="features__item--text">Привезем модные строительные ограждения к каждому заказу от 20 000 </span>
+					</div>
+					
+					<div class="features__item col-3">
+						<img src="img/icon__features--man2.png" alt="" class="features__item features__item--img">
+						<span class="features__item--text">С техникой приедут квалифицированные операторы и водители</span>
+					</div>
 
-				</div>	
-				<!-- / Form -->
 
+				</div>
+				
 			</div>
-			
-			<div class="stripes"></div> <!-- Gradient lines -->
 		</div>
-		<!-- /ABOVEFOOTER -->
+		<!-- / Features block -->
 
-		<!-- FOOTER -->
-		<footer>
-    		
-    		<div class="container">
 
-    			<div class="row">
+	</main>
+	<!-- / PAGE CONTENT -->
 
-    				<a href="index.html" class="logo">
-    					<img src="img/logo2.png" height="36" width="47" alt="Спецтех24"></img>
-    					<span><strong>Спецтех</strong>24</span>
-    				</a>
-    				
-    				<nav>
-    					<ul>
-    						<li><a href="team.html">О компании</a></li>
-    						<li><a href="tech.html">Техника</a></li>
-    						<li><a href="portfolio.html">Портфолио</a></li>
-    						<li><a href="contacts.html">Контакты</a></li>
-    						<li><a href="">Заказать звонок</a></li>
-    					</ul>
-    				</nav>
-    				
+	<!-- FOOTER -->
+	<footer class="page-footer">
+
+		<div class="container">
+			<div class="row">
+
+
+				<div class="col-4"> <!-- Logo Group-->
+					
+					<a href="index.html" class="page-footer__logo">
+						<img src="img/icon__logo--footer.png" alt="Главная | Спецтех24" class="page-footer__logo-img">
+						<span class="page-footer__logo-text"><strong>Спецтех</strong>24</span>
+					</a>
+
 				</div>
 
-    		</div>				
-		
-		</footer>
-		<!-- / FOOTER -->
-	</body>
+
+				<div class="col-8"> <!-- Main Nav Group-->
+					
+					<nav class="page-footer__nav">
+						<ul class="page-header__nav-links">
+							<a href="team.html" class="page-footer__nav-link-item"><li class="page-footer__nav-link">О компании</li></a>
+							<a href="catalog.html" class="page-footer__nav-link-item"><li class="page-footer__nav-link">Техника</li></a>
+							<a href="portfolio.html" class="page-footer__nav-link-item"><li class="page-footer__nav-link">Портфолио</li></a>
+							<a href="contacts.html" class="page-footer__nav-link-item"><li class="page-footer__nav-link">Контакты</li></a>
+							<a href="contacts.html/#contact-form" class="page-footer__nav-link-item"><li class="page-footer__nav-link page-footer__nav-link--cta">Заказать звонок</li></a>
+						</ul>
+					</nav>
+
+				</div>
+
+
+			</div>
+		</div>
+
+	</footer>	
+	<!-- / FOOTER -->
+
+</body>
 </html>

@@ -1,0 +1,63 @@
+.page-footer{
+	background-color: #202e3b;
+	line-height: 80px;
+
+	// footer logo group
+	&__logo{
+		display: inline-block;
+		float: left;
+		font-size: 24px;
+		color: #ffcc33;
+		text-decoration: none;
+
+		// logo image (img)
+		&-img{
+			vertical-align: middle;
+		}
+		
+		// logo text (span)
+		&-text{
+			vertical-align: middle;
+		}
+	}
+	
+	// footer navigation group
+	&__nav{
+		float: right;
+		font-size: 17px;
+		width: 100%;
+
+		// list of navigation elements (ul)
+		&-links{
+			text-align: right;
+		}
+		
+		// navigation element (li)
+		&-link{
+			display: inline-block;
+			text-align: center;
+			padding: 0 15px;
+			
+			&:hover{
+				color: #ffcc33;
+				line-height: 45px;
+			}
+			
+			// navigation link (a)
+			&-item{
+				text-decoration: none;
+				color: #fff;
+			}
+			
+			// navigation call-to-action item
+			&--cta{
+				color: #ffcc33;
+				line-height: 45px;
+
+				&:hover{
+					background-color: #f8f7f7;
+				}
+			}
+		}
+	}
+}

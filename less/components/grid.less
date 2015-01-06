@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: @font-family;
+	box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    max-width: @container-max-width;
+    min-width: @container-min-width;	
+	margin: 0px auto;
+}
+
+.row{
+	overflow: hidden;
+
+	div{
+
+		&:first-child{padding-left: 0;}
+		&:last-child{padding-right: 0;}
+	}
+}
+
+// ГЕНЕРАТОР КОЛОНОК
+
+.generate-columns(@n, @i: 1) when (@i =< @n) { // Условие выполнения!
+	// @n — количество колонок
+	// @i — внутренний счетчик от 1 до @n
+	// Собственно, генерация
+	.col-@{i} {
+		width: (@i * 100% / @n);
+		padding: @padding;
+		box-sizing: border-box;
+		float: left;
+	}
+
+	// Рекурсовный самовызов с увеличенным на 1 счетчиком
+	.generate-columns(@n, (@i + 1));
+}
+
+// Вызываем примесь
+.generate-columns(12);
+
