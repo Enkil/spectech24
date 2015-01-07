@@ -4,14 +4,35 @@
 	padding-bottom: 20px;
 	margin-bottom: 25px;
 
+	&--index{
+		padding: 0;
+		margin: 0;
+	}
+
 	&__title{
 		font-size: 24px;
 		font-weight: bold;
 		line-height: 24px;
 		padding: 20px;
+
+		&--index{
+			padding: 0;
+			margin-bottom: 15px;
+			font-size: 30px;
+			line-height: normal;
+		}		
+
+		&--notbold{
+			font-weight: normal;
+		}
 	}
 
 	&__list{
+
+		&--index{
+			margin: 10px 0;
+			overflow: hidden;
+		}
 	}
 
 	&__item{
@@ -32,12 +53,22 @@
 			text-align: left;
 			padding-left: 35px;
 		}
+		
+		&--index{
+			padding: 0 10px;
+		}
 	}
 
 	&__face{
 		border-radius: 50%;
 		height: 120px; 
 		width: 120px;
+
+		&--index{
+			height: 80px;
+			width: 80px;
+			border: 1px solid #000;
+		}
 	}
 }
 
